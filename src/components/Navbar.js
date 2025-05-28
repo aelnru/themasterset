@@ -17,17 +17,17 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-masterball-main via-masterball-pink to-masterball-dark text-white px-6 py-4 shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="max-w-4xl mx-auto flex flex-wrap justify-between items-center relative">
+    <nav className="bg-gradient-to-r from-masterball-main via-masterball-pink to-masterball-dark text-masterball-neutral px-6 py-4 shadow-md fixed top-0 left-0 w-full z-50">
+      <div className="max-w-4xl flex flex-wrap justify-start items-center relative px-6">
         {/* Logo and Title */}
         <div className="flex items-center space-x-3">
           <img
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/master-ball.png"
+            src="/assets/logo.png"
             alt="Logo"
-            className="h-10 w-10"
+            className="h-[72px] w-[72px]"
           />
           <Link to="/" className=" font-luckiest tracking-widest text-3xl hover:text-yellow-200 transition">
-            The Master Set
+            The Master Set Collectables
           </Link>
         </div>
 
@@ -57,16 +57,17 @@ export default function Navbar() {
             </div>
           </div> */}
 
-          {/* Dark Mode Toggle Button */}
+          {/* Dark Mode Toggle Button 
           <button
             onClick={() => setDark(!dark)}
             className="px-3 py-1 text-xl font-luckiest tracking-widest bg-masterball-neutral dark:bg-masterball-dark text-masterball-main dark:text-masterball-neutral rounded shadow hover:bg-gray-200 transition"
           >
             {dark ? "Light Mode" : "Dark Mode"}
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>
   );
 }
+
 
