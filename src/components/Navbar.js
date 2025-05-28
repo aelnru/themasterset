@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Logo and Title */}
         <div className="flex items-center space-x-3">
           <img
-            src="/assets/logo.png"
+            src="/logo.png"
             alt="Logo"
             className="h-[72px] w-[72px]"
           />
